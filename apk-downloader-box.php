@@ -115,8 +115,10 @@ function apk_downloader_box_shortcode() {
                         <input type="text" id="packname" name="packname" placeholder="Package ID or Google Play URL">
                     </label>
                     <div class="downloader__form__submit">
-                        <div id="apkmsg" class="alert alert--error" style="display: none;"></div>
+                        <div id="apkmsg_success" class="alert alert--success" style="display: none;"></div>
+                        <div id="apkmsg_error" class="alert alert--error" style="display: none;"></div>
                         <input type="hidden" name="action" value="check_apk_downloader_url"/>
+                        <input type="hidden" id="server_url" value="' . get_option('apk_downloader_url') . '/download-apk.php?url="/>
                         <button class="btn-main" type="submit">Download APK</button>
                     </div>
                 </form>
@@ -160,11 +162,12 @@ function ja_ajax_check_apk_downloader_url() {
         if ($app_url) {
             $return['status'] = "1";
             $return_url = str_replace('https://apkpure.com', "", $app_url);
+            $return_url = urlencode($return_url);
             $return['download_url'] = $return_url;
-            $result = "The download is ready.";
+            $return['html'] = "The download is ready.";
         } else {
             $return['status'] = "0";
-            $result = "File not found, please check the package name or URL.";
+            $return['html'] = "File not found, please check the package name or URL.";
         }
     }
     

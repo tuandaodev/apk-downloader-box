@@ -276,20 +276,20 @@ select, input, button {
 }
 
 .alert {
-  display: block;
-  padding: 15px;
-  margin: 20px 0;
-  border-radius: 4px;
+    display: block;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 .alert--success {
-  background-color: #dff0d8;
-  border: 1px solid rgba(60, 118, 61, 0.1);
-  color: #3c763d;
+    background-color: #dff0d8;
+    border: 1px solid rgba(60, 118, 61, 0.1);
+    color: #3c763d;
 }
 
 .alert--error {
-  background-color: #f2dede;
-  border: 1px solid rgba(169, 68, 66, 0.1);
-  color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid rgba(169, 68, 66, 0.1);
+    color: #a94442;
 }
