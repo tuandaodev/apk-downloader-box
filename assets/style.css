@@ -1,0 +1,295 @@
+/* 
+    Created on : Oct 19, 2018, 2:26:30 PM
+    Author     : dmtuan
+*/
+
+.container {
+    max-width: 1120px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.download__social {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.title-big {
+    font-size: 25px;
+    line-height: 32px;
+}
+
+.download__content {
+  padding: 86px 15px;
+  text-align: center;
+}
+
+.download__content i.icon-download {
+  color: #1FBDC4;
+  font-size: 28px;
+}
+
+.download__content .title-big {
+  margin: 20px 0 10px;
+  color: #1E2B38;
+}
+
+.download__content__info {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #616A73;
+}
+
+.download__content__link {
+  margin-top: 50px;
+  color: #99AEB9;
+}
+
+.download__content__link a {
+  color: #1F8DED;
+}
+
+.download__content__link a:hover {
+  color: #1FBDC4;
+}
+
+@media (max-width: 767px) {
+  .download__card {
+    margin-bottom: 48px;
+  }
+
+  .download__social {
+    position: absolute;
+    top: auto;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: rgba(232, 237, 238, 0.5);
+    text-align: center;
+    border-radius: 3px;
+    padding: 7px 0;
+  }
+
+  .download__social ul {
+    margin: 0 auto;
+  }
+
+  .download__social ul li {
+    padding: 0 4px;
+  }
+
+  .download__content {
+    padding: 18px 15px;
+  }
+
+  .download__content i.icon-download {
+    font-size: 20px;
+  }
+
+  .download__content h1,
+  .download__content p {
+    font-size: 14px;
+    margin: 7px 0 !important;
+  }
+}
+
+.card {
+    border-radius: 3px;
+    background-color: white;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.22);
+    position: relative;
+}
+
+.downloader__card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 43px;
+}
+
+.downloader__card h1 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.downloader__form {
+  padding-bottom: 25px;
+}
+
+.downloader__form__submit {
+  text-align: center;
+  padding-top: 28px;
+}
+
+.downloader__form__submit button.btn-main {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.downloader__footer {
+  border-top: 1px solid #E8EDEE;
+  padding-top: 15px;
+}
+
+.downloader__footer p {
+  color: #1E2B38;
+}
+
+.downloader__footer p a {
+  color: #1F8DED;
+}
+
+.downloader__footer p a:hover {
+  color: #1FBDC4;
+}
+
+@media (max-width: 767px) {
+  .downloader {
+    background: white;
+  }
+
+  .downloader.page-content {
+    padding-top: 54px;
+  }
+
+  .downloader__card {
+    padding: 15px;
+  }
+
+  .downloader__card h1 {
+    margin-bottom: 15px;
+    /*text-align: left;*/
+  }
+
+  .downloader__card.card {
+    border-bottom: none !important;
+  }
+
+  .downloader__form {
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .downloader__form__submit button.btn-main {
+    width: 100%;
+  }
+}
+
+.title-large, .title-big, .title-medium, .title-small, .title-smallest {
+    font-weight: 600;
+    color: #1E2B38;
+}
+
+.downloader__footer {
+    border-top: 1px solid #E8EDEE;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+.btn-main,
+.btn-outlined,
+.btn-like {
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-main i,
+.btn-outlined i,
+.btn-like i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-main:hover,
+.btn-outlined:hover,
+.btn-like:hover {
+  cursor: pointer;
+}
+
+.btn-main,
+.btn-main-sm {
+  background: #1FBDC4;
+  line-height: 48px;
+  height: 48px;
+  color: white;
+  padding: 0 22px;
+}
+
+.btn-main i,
+.btn-main-sm i {
+  margin-right: 13px;
+  position: relative;
+  top: 3px;
+  font-size: 20px;
+  color: white;
+}
+
+.btn-main span,
+.btn-main-sm span {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.btn-main:hover,
+.btn-main-sm:hover {
+  background-color: #1FA5C4;
+  color: #ffffff !important;
+}
+
+label input:not([type=radio]) {
+    height: 50px;
+    padding: 0 14px;
+    border-radius: 3px;
+    color: #1E2B38;
+    width: 100%;
+}
+
+label textarea, label input:not([type=radio]) {
+    border: solid 2px #E8EDEE;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: none;
+    font-size: 13px;
+}
+
+select, input, button {
+    outline: none !important;
+}
+
+.downloader__container input {
+    box-shadow: unset !important;
+}
+
+.entry-header {
+    display: none !important;
+}
+
+.alert {
+  display: block;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.alert--success {
+  background-color: #dff0d8;
+  border: 1px solid rgba(60, 118, 61, 0.1);
+  color: #3c763d;
+}
+
+.alert--error {
+  background-color: #f2dede;
+  border: 1px solid rgba(169, 68, 66, 0.1);
+  color: #a94442;
+}
