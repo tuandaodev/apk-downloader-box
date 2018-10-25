@@ -162,6 +162,7 @@ function ja_ajax_check_apk_downloader_url() {
         if ($app_url) {
             $return['status'] = "1";
             $return_url = str_replace('https://apkpure.com', "", $app_url);
+            $return_url .= "&packname=".$packname;
             $return_url = urlencode($return_url);
             $return['download_url'] = $return_url;
             $return['html'] = "The download is ready.";
